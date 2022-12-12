@@ -1,0 +1,50 @@
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\bin\Debug\PIVKO.exe.config
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\bin\Debug\PIVKO.exe
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\bin\Debug\PIVKO.pdb
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\bin\Debug\EntityFramework.dll
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\bin\Debug\EntityFramework.xml
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.csprojAssemblyReference.cache
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.LoginForm.resources
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.Properties.Resources.resources
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.csproj.GenerateResource.cache
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.csproj.CopyComplete
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.exe
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.pdb
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.RegForm.resources
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.MainMenu.resources
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.JudgeRoomsForm.resources
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.PlayerRoomsForm.resources
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.RoomForm.resources
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.CreateRoomForm.resources
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.AddTaskForm.resources
+C:\Users\Acer\Desktop\PIVKO PROJ\PIVKO\PIVKO\obj\Debug\PIVKO.AddPlayerForm.resources
+D:\Лабы\PIVKO\PIVKO\bin\Debug\PIVKO.exe.config
+D:\Лабы\PIVKO\PIVKO\bin\Debug\PIVKO.exe
+D:\Лабы\PIVKO\PIVKO\bin\Debug\PIVKO.pdb
+D:\Лабы\PIVKO\PIVKO\bin\Debug\EntityFramework.dll
+D:\Лабы\PIVKO\PIVKO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Лабы\PIVKO\PIVKO\bin\Debug\EntityFramework.xml
+D:\Лабы\PIVKO\PIVKO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Лабы\PIVKO\PIVKO\bin\Debug\ru\EntityFramework.resources.dll
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.csproj.AssemblyReference.cache
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.csproj.SuggestedBindingRedirects.cache
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.AddPlayerForm.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.AddTaskForm.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.CreateRoomForm.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.JudgeRoomsForm.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.LoginForm.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.MainMenu.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.PlayerRoomsForm.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.Properties.Resources.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.RegForm.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.RoomForm.resources
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.csproj.GenerateResource.cache
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.csproj.CoreCompileInputs.cache
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.csproj.CopyComplete
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.exe
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.pdb
+D:\Лабы\PIVKO\PIVKO\obj\Debug\PIVKO.ChooseTaskToCountForm.resources
