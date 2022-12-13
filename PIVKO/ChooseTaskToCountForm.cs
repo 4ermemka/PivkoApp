@@ -36,7 +36,7 @@ namespace PIVKO
         {
             string ask = PlayerSearchInput.Text;
             if (ask == string.Empty) RoomTasksGrid.DataSource = PivkoDBHandler.GetData("Select ID_Task, Description, Points From Tasks Where ID_Room = "+ id_room);
-            else RoomTasksGrid.DataSource = PivkoDBHandler.GetData("Select ID_Task, Description, Points From Tasks Where Description Like \'%" + ask + "%\' AND ID_Room = \"+ id_room");
+            else RoomTasksGrid.DataSource = PivkoDBHandler.GetData("Select ID_Task, Description, Points From Tasks Where Description Like \'%" + ask + "%\' AND ID_Room = "+ id_room);
 
             RoomTasksGrid.Columns["ID_Task"].Visible = false;
             RoomTasksGrid.Columns["Description"].HeaderText = "Задание"; RoomTasksGrid.Columns["Description"].Width = 387;

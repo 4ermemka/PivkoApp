@@ -159,25 +159,21 @@ namespace PIVKO
 
             RoomTasksGrid.DataSource = dst;
 
-            //RoomPlayersGrid.Columns[0].Visible = false;
-            //RoomPlayersGrid.Columns[1].HeaderText = "Имя пользователя"; RoomPlayersGrid.Columns[1].Width = width;
-            //RoomPlayersGrid.Columns[2].HeaderText = "Очки"; RoomPlayersGrid.Columns[2].Width = 50;
-
             RoomTasksGrid.Columns[0].Visible = false;
-            RoomTasksGrid.Columns[1].HeaderText = "Задание"; RoomTasksGrid.Columns[1].Width = 350;
+            RoomTasksGrid.Columns[1].HeaderText = "Задание"; RoomTasksGrid.Columns[1].Width = 360;
             RoomTasksGrid.Columns[2].HeaderText = "Очки"; RoomTasksGrid.Columns[2].Width = 100;
 
             if (jrf != null)
             {
-                RoomPlayersGrid.Columns[0].HeaderText = "Задание"; RoomPlayersGrid.Columns[0].Width = 80;
+                RoomPlayersGrid.Columns[0].HeaderText = "Задание"; RoomPlayersGrid.Columns[0].Width = 100;
                 RoomPlayersGrid.Columns[1].Visible = false;
-                RoomPlayersGrid.Columns[2].HeaderText = "Имя пользователя"; RoomPlayersGrid.Columns[2].Width = 350;
+                RoomPlayersGrid.Columns[2].HeaderText = "Имя пользователя"; RoomPlayersGrid.Columns[2].Width = 359;
                 RoomPlayersGrid.Columns[3].HeaderText = "Очки"; RoomPlayersGrid.Columns[3].Width = 70;
             }
             else
             {
                 RoomPlayersGrid.Columns[0].Visible = false;
-                RoomPlayersGrid.Columns[1].HeaderText = "Имя пользователя"; RoomPlayersGrid.Columns[1].Width = 400;
+                RoomPlayersGrid.Columns[1].HeaderText = "Имя пользователя"; RoomPlayersGrid.Columns[1].Width = 410;
                 RoomPlayersGrid.Columns[2].HeaderText = "Очки"; RoomPlayersGrid.Columns[2].Width = 100;
             }
         }

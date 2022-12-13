@@ -33,20 +33,22 @@ namespace PIVKO
             this.WorkPanel = new System.Windows.Forms.Panel();
             this.RoomPages = new System.Windows.Forms.TabControl();
             this.PlayersPage = new System.Windows.Forms.TabPage();
+            this.PlayerToolsPanel = new System.Windows.Forms.Panel();
+            this.DelPlayerButton = new System.Windows.Forms.Button();
+            this.AddPlayerButton = new System.Windows.Forms.Button();
             this.RoomPlayersGrid = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.PlayerSearchInput = new System.Windows.Forms.TextBox();
             this.SearchLabel = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.TaskToolsPanel = new System.Windows.Forms.Panel();
+            this.DelTaskButton = new System.Windows.Forms.Button();
+            this.AddTaskButton = new System.Windows.Forms.Button();
             this.RoomTasksGrid = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.TaskSearchInput = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.ButtonsPanel = new System.Windows.Forms.Panel();
-            this.DelTaskButton = new System.Windows.Forms.Button();
-            this.DelPlayerButton = new System.Windows.Forms.Button();
-            this.AddTaskButton = new System.Windows.Forms.Button();
-            this.AddPlayerButton = new System.Windows.Forms.Button();
             this.RoomInfo = new System.Windows.Forms.GroupBox();
             this.PrefixInput = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -63,22 +65,20 @@ namespace PIVKO
             this.UpperPanel = new System.Windows.Forms.Panel();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.AppName = new System.Windows.Forms.Label();
-            this.PlayerToolsPanel = new System.Windows.Forms.Panel();
-            this.TaskToolsPanel = new System.Windows.Forms.Panel();
             this.WorkPanel.SuspendLayout();
             this.RoomPages.SuspendLayout();
             this.PlayersPage.SuspendLayout();
+            this.PlayerToolsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RoomPlayersGrid)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.TaskToolsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RoomTasksGrid)).BeginInit();
             this.panel2.SuspendLayout();
             this.ButtonsPanel.SuspendLayout();
             this.RoomInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PrizeInput)).BeginInit();
             this.UpperPanel.SuspendLayout();
-            this.PlayerToolsPanel.SuspendLayout();
-            this.TaskToolsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // WorkPanel
@@ -123,6 +123,58 @@ namespace PIVKO
             this.PlayersPage.Size = new System.Drawing.Size(515, 452);
             this.PlayersPage.TabIndex = 0;
             this.PlayersPage.Text = "Игроки";
+            // 
+            // PlayerToolsPanel
+            // 
+            this.PlayerToolsPanel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.PlayerToolsPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PlayerToolsPanel.Controls.Add(this.DelPlayerButton);
+            this.PlayerToolsPanel.Controls.Add(this.AddPlayerButton);
+            this.PlayerToolsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PlayerToolsPanel.Location = new System.Drawing.Point(3, 363);
+            this.PlayerToolsPanel.Name = "PlayerToolsPanel";
+            this.PlayerToolsPanel.Size = new System.Drawing.Size(509, 43);
+            this.PlayerToolsPanel.TabIndex = 4;
+            // 
+            // DelPlayerButton
+            // 
+            this.DelPlayerButton.BackColor = System.Drawing.Color.SteelBlue;
+            this.DelPlayerButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.DelPlayerButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.DelPlayerButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
+            this.DelPlayerButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
+            this.DelPlayerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.DelPlayerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.DelPlayerButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DelPlayerButton.ForeColor = System.Drawing.Color.Lavender;
+            this.DelPlayerButton.Location = new System.Drawing.Point(254, 0);
+            this.DelPlayerButton.Margin = new System.Windows.Forms.Padding(2);
+            this.DelPlayerButton.Name = "DelPlayerButton";
+            this.DelPlayerButton.Size = new System.Drawing.Size(251, 39);
+            this.DelPlayerButton.TabIndex = 6;
+            this.DelPlayerButton.Text = "Удалить игрока";
+            this.DelPlayerButton.UseVisualStyleBackColor = false;
+            this.DelPlayerButton.Click += new System.EventHandler(this.DelPlayerButton_Click);
+            // 
+            // AddPlayerButton
+            // 
+            this.AddPlayerButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.AddPlayerButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.AddPlayerButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.AddPlayerButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
+            this.AddPlayerButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
+            this.AddPlayerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.AddPlayerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddPlayerButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddPlayerButton.ForeColor = System.Drawing.Color.Lavender;
+            this.AddPlayerButton.Location = new System.Drawing.Point(0, 0);
+            this.AddPlayerButton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddPlayerButton.Name = "AddPlayerButton";
+            this.AddPlayerButton.Size = new System.Drawing.Size(250, 39);
+            this.AddPlayerButton.TabIndex = 4;
+            this.AddPlayerButton.Text = "Добавить игрока";
+            this.AddPlayerButton.UseVisualStyleBackColor = false;
+            this.AddPlayerButton.Click += new System.EventHandler(this.AddPlayerButton_Click);
             // 
             // RoomPlayersGrid
             // 
@@ -193,6 +245,58 @@ namespace PIVKO
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Задания";
             // 
+            // TaskToolsPanel
+            // 
+            this.TaskToolsPanel.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.TaskToolsPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.TaskToolsPanel.Controls.Add(this.DelTaskButton);
+            this.TaskToolsPanel.Controls.Add(this.AddTaskButton);
+            this.TaskToolsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.TaskToolsPanel.Location = new System.Drawing.Point(3, 363);
+            this.TaskToolsPanel.Name = "TaskToolsPanel";
+            this.TaskToolsPanel.Size = new System.Drawing.Size(509, 43);
+            this.TaskToolsPanel.TabIndex = 5;
+            // 
+            // DelTaskButton
+            // 
+            this.DelTaskButton.BackColor = System.Drawing.Color.SteelBlue;
+            this.DelTaskButton.Dock = System.Windows.Forms.DockStyle.Right;
+            this.DelTaskButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.DelTaskButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
+            this.DelTaskButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
+            this.DelTaskButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.DelTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.DelTaskButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DelTaskButton.ForeColor = System.Drawing.Color.Lavender;
+            this.DelTaskButton.Location = new System.Drawing.Point(254, 0);
+            this.DelTaskButton.Margin = new System.Windows.Forms.Padding(2);
+            this.DelTaskButton.Name = "DelTaskButton";
+            this.DelTaskButton.Size = new System.Drawing.Size(251, 39);
+            this.DelTaskButton.TabIndex = 7;
+            this.DelTaskButton.Text = "Удалить задание";
+            this.DelTaskButton.UseVisualStyleBackColor = false;
+            this.DelTaskButton.Click += new System.EventHandler(this.DelTaskButton_Click);
+            // 
+            // AddTaskButton
+            // 
+            this.AddTaskButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.AddTaskButton.Dock = System.Windows.Forms.DockStyle.Left;
+            this.AddTaskButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.AddTaskButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
+            this.AddTaskButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
+            this.AddTaskButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.AddTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddTaskButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddTaskButton.ForeColor = System.Drawing.Color.Lavender;
+            this.AddTaskButton.Location = new System.Drawing.Point(0, 0);
+            this.AddTaskButton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddTaskButton.Name = "AddTaskButton";
+            this.AddTaskButton.Size = new System.Drawing.Size(250, 39);
+            this.AddTaskButton.TabIndex = 5;
+            this.AddTaskButton.Text = "Добавить задание";
+            this.AddTaskButton.UseVisualStyleBackColor = false;
+            this.AddTaskButton.Click += new System.EventHandler(this.AddTaskButton_Click);
+            // 
             // RoomTasksGrid
             // 
             this.RoomTasksGrid.AllowUserToAddRows = false;
@@ -260,86 +364,6 @@ namespace PIVKO
             this.ButtonsPanel.Name = "ButtonsPanel";
             this.ButtonsPanel.Size = new System.Drawing.Size(270, 495);
             this.ButtonsPanel.TabIndex = 4;
-            // 
-            // DelTaskButton
-            // 
-            this.DelTaskButton.BackColor = System.Drawing.Color.SteelBlue;
-            this.DelTaskButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.DelTaskButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.DelTaskButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
-            this.DelTaskButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
-            this.DelTaskButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.DelTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.DelTaskButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DelTaskButton.ForeColor = System.Drawing.Color.Lavender;
-            this.DelTaskButton.Location = new System.Drawing.Point(254, 0);
-            this.DelTaskButton.Margin = new System.Windows.Forms.Padding(2);
-            this.DelTaskButton.Name = "DelTaskButton";
-            this.DelTaskButton.Size = new System.Drawing.Size(251, 39);
-            this.DelTaskButton.TabIndex = 7;
-            this.DelTaskButton.Text = "Удалить задание";
-            this.DelTaskButton.UseVisualStyleBackColor = false;
-            this.DelTaskButton.Click += new System.EventHandler(this.DelTaskButton_Click);
-            // 
-            // DelPlayerButton
-            // 
-            this.DelPlayerButton.BackColor = System.Drawing.Color.SteelBlue;
-            this.DelPlayerButton.Dock = System.Windows.Forms.DockStyle.Right;
-            this.DelPlayerButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.DelPlayerButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
-            this.DelPlayerButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
-            this.DelPlayerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.DelPlayerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.DelPlayerButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DelPlayerButton.ForeColor = System.Drawing.Color.Lavender;
-            this.DelPlayerButton.Location = new System.Drawing.Point(254, 0);
-            this.DelPlayerButton.Margin = new System.Windows.Forms.Padding(2);
-            this.DelPlayerButton.Name = "DelPlayerButton";
-            this.DelPlayerButton.Size = new System.Drawing.Size(251, 39);
-            this.DelPlayerButton.TabIndex = 6;
-            this.DelPlayerButton.Text = "Удалить игрока";
-            this.DelPlayerButton.UseVisualStyleBackColor = false;
-            this.DelPlayerButton.Click += new System.EventHandler(this.DelPlayerButton_Click);
-            // 
-            // AddTaskButton
-            // 
-            this.AddTaskButton.BackColor = System.Drawing.Color.MidnightBlue;
-            this.AddTaskButton.Dock = System.Windows.Forms.DockStyle.Left;
-            this.AddTaskButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.AddTaskButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
-            this.AddTaskButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
-            this.AddTaskButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.AddTaskButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AddTaskButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddTaskButton.ForeColor = System.Drawing.Color.Lavender;
-            this.AddTaskButton.Location = new System.Drawing.Point(0, 0);
-            this.AddTaskButton.Margin = new System.Windows.Forms.Padding(2);
-            this.AddTaskButton.Name = "AddTaskButton";
-            this.AddTaskButton.Size = new System.Drawing.Size(250, 39);
-            this.AddTaskButton.TabIndex = 5;
-            this.AddTaskButton.Text = "Добавить задание";
-            this.AddTaskButton.UseVisualStyleBackColor = false;
-            this.AddTaskButton.Click += new System.EventHandler(this.AddTaskButton_Click);
-            // 
-            // AddPlayerButton
-            // 
-            this.AddPlayerButton.BackColor = System.Drawing.Color.MidnightBlue;
-            this.AddPlayerButton.Dock = System.Windows.Forms.DockStyle.Left;
-            this.AddPlayerButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.AddPlayerButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
-            this.AddPlayerButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
-            this.AddPlayerButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.AddPlayerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.AddPlayerButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddPlayerButton.ForeColor = System.Drawing.Color.Lavender;
-            this.AddPlayerButton.Location = new System.Drawing.Point(0, 0);
-            this.AddPlayerButton.Margin = new System.Windows.Forms.Padding(2);
-            this.AddPlayerButton.Name = "AddPlayerButton";
-            this.AddPlayerButton.Size = new System.Drawing.Size(250, 39);
-            this.AddPlayerButton.TabIndex = 4;
-            this.AddPlayerButton.Text = "Добавить игрока";
-            this.AddPlayerButton.UseVisualStyleBackColor = false;
-            this.AddPlayerButton.Click += new System.EventHandler(this.AddPlayerButton_Click);
             // 
             // RoomInfo
             // 
@@ -557,30 +581,6 @@ namespace PIVKO
             this.AppName.Text = "Pivko";
             this.AppName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // PlayerToolsPanel
-            // 
-            this.PlayerToolsPanel.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.PlayerToolsPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PlayerToolsPanel.Controls.Add(this.DelPlayerButton);
-            this.PlayerToolsPanel.Controls.Add(this.AddPlayerButton);
-            this.PlayerToolsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PlayerToolsPanel.Location = new System.Drawing.Point(3, 363);
-            this.PlayerToolsPanel.Name = "PlayerToolsPanel";
-            this.PlayerToolsPanel.Size = new System.Drawing.Size(509, 43);
-            this.PlayerToolsPanel.TabIndex = 4;
-            // 
-            // TaskToolsPanel
-            // 
-            this.TaskToolsPanel.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.TaskToolsPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.TaskToolsPanel.Controls.Add(this.DelTaskButton);
-            this.TaskToolsPanel.Controls.Add(this.AddTaskButton);
-            this.TaskToolsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.TaskToolsPanel.Location = new System.Drawing.Point(3, 363);
-            this.TaskToolsPanel.Name = "TaskToolsPanel";
-            this.TaskToolsPanel.Size = new System.Drawing.Size(509, 43);
-            this.TaskToolsPanel.TabIndex = 5;
-            // 
             // RoomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -597,10 +597,12 @@ namespace PIVKO
             this.WorkPanel.ResumeLayout(false);
             this.RoomPages.ResumeLayout(false);
             this.PlayersPage.ResumeLayout(false);
+            this.PlayerToolsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.RoomPlayersGrid)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.TaskToolsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.RoomTasksGrid)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -609,8 +611,6 @@ namespace PIVKO
             this.RoomInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PrizeInput)).EndInit();
             this.UpperPanel.ResumeLayout(false);
-            this.PlayerToolsPanel.ResumeLayout(false);
-            this.TaskToolsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
