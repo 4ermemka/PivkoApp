@@ -31,17 +31,17 @@ namespace PIVKO
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.WorkPanel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.DelUserButton = new System.Windows.Forms.Button();
             this.JudgeButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
-            this.DelUserButton = new System.Windows.Forms.Button();
             this.PlayerButton = new System.Windows.Forms.Button();
             this.UpperPanel = new System.Windows.Forms.Panel();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.AppName = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.WorkPanel.SuspendLayout();
-            this.UpperPanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.UpperPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // WorkPanel
@@ -59,9 +59,39 @@ namespace PIVKO
             this.WorkPanel.Size = new System.Drawing.Size(296, 386);
             this.WorkPanel.TabIndex = 1;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.DelUserButton);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 322);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(296, 32);
+            this.panel1.TabIndex = 6;
+            // 
+            // DelUserButton
+            // 
+            this.DelUserButton.BackColor = System.Drawing.Color.DarkGreen;
+            this.DelUserButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DelUserButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.DelUserButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
+            this.DelUserButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
+            this.DelUserButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
+            this.DelUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.DelUserButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DelUserButton.ForeColor = System.Drawing.Color.Honeydew;
+            this.DelUserButton.Location = new System.Drawing.Point(0, 0);
+            this.DelUserButton.Margin = new System.Windows.Forms.Padding(2);
+            this.DelUserButton.Name = "DelUserButton";
+            this.DelUserButton.Size = new System.Drawing.Size(296, 32);
+            this.DelUserButton.TabIndex = 3;
+            this.DelUserButton.Text = "Удалить аккаунт";
+            this.DelUserButton.UseVisualStyleBackColor = false;
+            this.DelUserButton.Click += new System.EventHandler(this.StatisticsButton_Click);
+            // 
             // JudgeButton
             // 
             this.JudgeButton.BackColor = System.Drawing.Color.SeaGreen;
+            this.JudgeButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.JudgeButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.JudgeButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
             this.JudgeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
@@ -69,10 +99,10 @@ namespace PIVKO
             this.JudgeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.JudgeButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JudgeButton.ForeColor = System.Drawing.Color.Honeydew;
-            this.JudgeButton.Location = new System.Drawing.Point(9, 84);
+            this.JudgeButton.Location = new System.Drawing.Point(0, 76);
             this.JudgeButton.Margin = new System.Windows.Forms.Padding(2);
             this.JudgeButton.Name = "JudgeButton";
-            this.JudgeButton.Size = new System.Drawing.Size(278, 35);
+            this.JudgeButton.Size = new System.Drawing.Size(296, 35);
             this.JudgeButton.TabIndex = 5;
             this.JudgeButton.Text = "Судья";
             this.JudgeButton.UseVisualStyleBackColor = false;
@@ -98,29 +128,10 @@ namespace PIVKO
             this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
-            // DelUserButton
-            // 
-            this.DelUserButton.BackColor = System.Drawing.Color.DarkGreen;
-            this.DelUserButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DelUserButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.DelUserButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
-            this.DelUserButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
-            this.DelUserButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Goldenrod;
-            this.DelUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.DelUserButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DelUserButton.ForeColor = System.Drawing.Color.Honeydew;
-            this.DelUserButton.Location = new System.Drawing.Point(0, 0);
-            this.DelUserButton.Margin = new System.Windows.Forms.Padding(2);
-            this.DelUserButton.Name = "DelUserButton";
-            this.DelUserButton.Size = new System.Drawing.Size(296, 32);
-            this.DelUserButton.TabIndex = 3;
-            this.DelUserButton.Text = "Удалить аккаунт";
-            this.DelUserButton.UseVisualStyleBackColor = false;
-            this.DelUserButton.Click += new System.EventHandler(this.StatisticsButton_Click);
-            // 
             // PlayerButton
             // 
             this.PlayerButton.BackColor = System.Drawing.Color.SeaGreen;
+            this.PlayerButton.Dock = System.Windows.Forms.DockStyle.Top;
             this.PlayerButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.PlayerButton.FlatAppearance.CheckedBackColor = System.Drawing.Color.Khaki;
             this.PlayerButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
@@ -128,10 +139,10 @@ namespace PIVKO
             this.PlayerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.PlayerButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PlayerButton.ForeColor = System.Drawing.Color.Honeydew;
-            this.PlayerButton.Location = new System.Drawing.Point(9, 45);
+            this.PlayerButton.Location = new System.Drawing.Point(0, 41);
             this.PlayerButton.Margin = new System.Windows.Forms.Padding(2);
             this.PlayerButton.Name = "PlayerButton";
-            this.PlayerButton.Size = new System.Drawing.Size(278, 35);
+            this.PlayerButton.Size = new System.Drawing.Size(296, 35);
             this.PlayerButton.TabIndex = 3;
             this.PlayerButton.Text = "Участник";
             this.PlayerButton.UseVisualStyleBackColor = false;
@@ -181,15 +192,6 @@ namespace PIVKO
             this.AppName.Text = "Pivko";
             this.AppName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.DelUserButton);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 322);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 32);
-            this.panel1.TabIndex = 6;
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,8 +206,8 @@ namespace PIVKO
             this.Text = "Меню";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenu_FormClosed);
             this.WorkPanel.ResumeLayout(false);
-            this.UpperPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.UpperPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

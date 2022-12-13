@@ -48,7 +48,7 @@ namespace PIVKO
 
         private void StatisticsButton_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Желаете выйти из спора?", "Выход из спора",
+            var result = MessageBox.Show("Вы точно хотите удалить свой аккаунт?", "Удаление аккаунта",
                                 MessageBoxButtons.YesNo,
                                 MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
@@ -58,8 +58,8 @@ namespace PIVKO
                 ds = PivkoDBHandler.GetData("Select * From Player where ID_User = " + user_id);
                 for (int i = 0; i < ds.Rows.Count; i++)
                 {
-                    Player p = PivkoDBHandler.db.Player.Find(ds.Rows[i].Field<int>("ID_Room"), user_id);
-                    PivkoDBHandler.db.Player.Remove(p);
+                    Player p = PivkoDBHandler.db.Player.Find(user_id, ds.Rows[i].Field<int>("ID_Room"));
+                    if(p!=null) PivkoDBHandler.db.Player.Remove(p);
                 }
 
                 Users u = PivkoDBHandler.db.Users.Find(user_id);

@@ -57,6 +57,7 @@ namespace PIVKO
                 Player p = new Player();
                 p.ID_Room = id_room;
                 p.ID_User = id;
+                p.Points = 0;
 
                 PivkoDBHandler.db.Player.Add(p);
                 PivkoDBHandler.db.SaveChanges();

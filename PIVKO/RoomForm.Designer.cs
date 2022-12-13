@@ -65,6 +65,8 @@ namespace PIVKO
             this.UpperPanel = new System.Windows.Forms.Panel();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.AppName = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.AdminNickname = new System.Windows.Forms.Label();
             this.WorkPanel.SuspendLayout();
             this.RoomPages.SuspendLayout();
             this.PlayersPage.SuspendLayout();
@@ -371,12 +373,14 @@ namespace PIVKO
             this.RoomInfo.Controls.Add(this.label8);
             this.RoomInfo.Controls.Add(this.PrizeInput);
             this.RoomInfo.Controls.Add(this.label7);
+            this.RoomInfo.Controls.Add(this.AdminNickname);
             this.RoomInfo.Controls.Add(this.EndDateLabel);
             this.RoomInfo.Controls.Add(this.label6);
             this.RoomInfo.Controls.Add(this.DescriptionInput);
             this.RoomInfo.Controls.Add(this.SaveChangesButton);
             this.RoomInfo.Controls.Add(this.RoomNameInput);
             this.RoomInfo.Controls.Add(this.label2);
+            this.RoomInfo.Controls.Add(this.label4);
             this.RoomInfo.Controls.Add(this.label1);
             this.RoomInfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.RoomInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -463,9 +467,9 @@ namespace PIVKO
             // 
             // DescriptionInput
             // 
-            this.DescriptionInput.Location = new System.Drawing.Point(9, 94);
+            this.DescriptionInput.Location = new System.Drawing.Point(9, 145);
             this.DescriptionInput.Name = "DescriptionInput";
-            this.DescriptionInput.Size = new System.Drawing.Size(254, 163);
+            this.DescriptionInput.Size = new System.Drawing.Size(254, 112);
             this.DescriptionInput.TabIndex = 9;
             this.DescriptionInput.Text = "";
             // 
@@ -492,7 +496,7 @@ namespace PIVKO
             // RoomNameInput
             // 
             this.RoomNameInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RoomNameInput.Location = new System.Drawing.Point(9, 45);
+            this.RoomNameInput.Location = new System.Drawing.Point(9, 95);
             this.RoomNameInput.Name = "RoomNameInput";
             this.RoomNameInput.Size = new System.Drawing.Size(254, 22);
             this.RoomNameInput.TabIndex = 1;
@@ -501,7 +505,7 @@ namespace PIVKO
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(6, 75);
+            this.label2.Location = new System.Drawing.Point(6, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 16);
             this.label2.TabIndex = 0;
@@ -511,7 +515,7 @@ namespace PIVKO
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(6, 26);
+            this.label1.Location = new System.Drawing.Point(6, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 16);
             this.label1.TabIndex = 0;
@@ -580,6 +584,27 @@ namespace PIVKO
             this.AppName.TabIndex = 0;
             this.AppName.Text = "Pivko";
             this.AppName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(7, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 16);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Название:";
+            // 
+            // AdminNickname
+            // 
+            this.AdminNickname.AutoSize = true;
+            this.AdminNickname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AdminNickname.ForeColor = System.Drawing.Color.LightCyan;
+            this.AdminNickname.Location = new System.Drawing.Point(9, 36);
+            this.AdminNickname.Name = "AdminNickname";
+            this.AdminNickname.Size = new System.Drawing.Size(91, 16);
+            this.AdminNickname.TabIndex = 10;
+            this.AdminNickname.Text = "AdminName";
             // 
             // RoomForm
             // 
@@ -651,5 +676,7 @@ namespace PIVKO
         private System.Windows.Forms.DataGridView RoomTasksGrid;
         private System.Windows.Forms.Panel PlayerToolsPanel;
         private System.Windows.Forms.Panel TaskToolsPanel;
+        private System.Windows.Forms.Label AdminNickname;
+        private System.Windows.Forms.Label label4;
     }
 }

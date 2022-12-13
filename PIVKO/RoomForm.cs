@@ -51,8 +51,13 @@ namespace PIVKO
             PrizeInput.Value = p;
             EndDateLabel.Text = e.ToString();
 
-            DataTable ds = PivkoDBHandler.GetData("Select * From Admin where ID_User = " + id_user);
-            if (ds.Rows.Count != 0) PrefixInput.Text = ds.Rows[0].Field<string>("Prefix");
+            DataTable ds = PivkoDBHandler.GetData("Select Users.ID_User, Users.Login, Users.Phone, Admin.Prefix From Admin,Users where Admin.ID_User = Users.ID_User AND Users.ID_User = " + id_user);
+            if (ds.Rows.Count != 0)
+            {
+                PrefixInput.Text = ds.Rows[0].Field<string>("Prefix");
+                AdminNickname.Text = ds.Rows[0].Field<string>("Prefix") + " " + ds.Rows[0].Field<string>("Login") + "\n"
+                    + PivkoDBHandler.decPhone(ds.Rows[0].Field<string>("Phone"), ds.Rows[0].Field<string>("Login"));
+            }
 
             DataGridViewButtonColumn buttonColumn =
             new DataGridViewButtonColumn();
@@ -126,6 +131,14 @@ namespace PIVKO
 
             UpdateTables();
 
+            DataTable ds = PivkoDBHandler.GetData("Select Users.ID_User, Users.Login, Users.Phone, Admin.Prefix From Admin,Users where Admin.ID_User = Users.ID_User AND Admin.ID_Room = " + id_room);
+            if (ds.Rows.Count != 0)
+            {
+                PrefixInput.Text = ds.Rows[0].Field<string>("Prefix");
+                AdminNickname.Text = ds.Rows[0].Field<string>("Prefix") + " " + ds.Rows[0].Field<string>("Login") + "\n"
+                    + PivkoDBHandler.decPhone(ds.Rows[0].Field<string>("Phone"), ds.Rows[0].Field<string>("Login"));
+            }
+
             PlayerToolsPanel.Visible = false;
             TaskToolsPanel.Visible = false;
             SaveChangesButton.Visible = false;
@@ -160,20 +173,20 @@ namespace PIVKO
             RoomTasksGrid.DataSource = dst;
 
             RoomTasksGrid.Columns[0].Visible = false;
-            RoomTasksGrid.Columns[1].HeaderText = "Задание"; RoomTasksGrid.Columns[1].Width = 360;
+            RoomTasksGrid.Columns[1].HeaderText = "Задание"; RoomTasksGrid.Columns[1].Width = 405;
             RoomTasksGrid.Columns[2].HeaderText = "Очки"; RoomTasksGrid.Columns[2].Width = 100;
 
             if (jrf != null)
             {
-                RoomPlayersGrid.Columns[0].HeaderText = "Задание"; RoomPlayersGrid.Columns[0].Width = 100;
+                RoomPlayersGrid.Columns[0].HeaderText = "Задание"; RoomPlayersGrid.Columns[0].Width = 90;
                 RoomPlayersGrid.Columns[1].Visible = false;
-                RoomPlayersGrid.Columns[2].HeaderText = "Имя пользователя"; RoomPlayersGrid.Columns[2].Width = 359;
+                RoomPlayersGrid.Columns[2].HeaderText = "Имя пользователя"; RoomPlayersGrid.Columns[2].Width = 354;
                 RoomPlayersGrid.Columns[3].HeaderText = "Очки"; RoomPlayersGrid.Columns[3].Width = 70;
             }
             else
             {
                 RoomPlayersGrid.Columns[0].Visible = false;
-                RoomPlayersGrid.Columns[1].HeaderText = "Имя пользователя"; RoomPlayersGrid.Columns[1].Width = 410;
+                RoomPlayersGrid.Columns[1].HeaderText = "Имя пользователя"; RoomPlayersGrid.Columns[1].Width = 405;
                 RoomPlayersGrid.Columns[2].HeaderText = "Очки"; RoomPlayersGrid.Columns[2].Width = 100;
             }
         }
